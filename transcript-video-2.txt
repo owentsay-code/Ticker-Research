@@ -1,0 +1,17 @@
+Video 2 transcript
+
+Transcript text matches the recording, as confirmed by the student.
+
+The model turns historical inputs and bounded assumptions into five linked annual statements and a valuation. Revenue drives operating profit. FCFF equals after-tax operating profit plus depreciation, minus capital spending and additional working capital. Dividends are financing distributions, not FCFF deductions, and I do not add forecast cash to enterprise value a second time. The interface changes assumptions while the accounting engine remains fixed.
+
+This command creates a fresh temporary virtual environment without third-party packages, copies the app, runs validation and exports, and compares the results with the packaged base. It checks statement balances, cash reconciliation, the equity bridge, discount-rate direction and infeasible assumptions. It also tests whether narrowing the growth range changes the sensitivity ranking. Passing these checks establishes numerical consistency, not that the forecasts will happen.
+
+I compared the training engine with the official Lab 05 and Lab 06 answers. All twelve DCF outputs, nine sensitivity cells and the reverse-DCF growth shift matched at the published precision: twenty-two checks passed. The training value is 27.4974 dollars per share and the reverse shift is about 1.78 percentage points. These are training-case results, separate from NVIDIA's valuation.
+
+My changed-input record changes only the five-year growth path by two percentage points. It records predictions of higher profit, FCFF and value before the stated run. The actual increases were 42.29 billion dollars in year-five operating profit, 29.41 billion in FCFF and 15.54 dollars per share, within the recorded ranges. The recommendation stayed unchanged because the scenario supplied no new growth evidence. I have confirmed AI-off authorship of my prediction; the file separately discloses AI partner review, and independent timing evidence remains a documented limitation.
+
+I am now starting the application from that newly created environment on port 8766. The existing rehearsal application on port 8765 is separate. This checks that the fresh copy can serve the usable interface.
+
+The fresh application reproduces the 209.28-dollar base. Increasing growth by two percentage points gives 224.81. Resetting recovers the base. Over the original sensitivity ranges, growth has the larger effect; narrowing growth to one point while keeping margin at five makes margin rank first. The ranking therefore depends on the ranges, not just the identity of the driver.
+
+The main economic limitations are terminal profitability, the required-return assumption and simplified shares and financing. AI contributed substantially to coding and writing; I own the assumptions I reviewed. The final manifest records file hashes, and I update it after adding the actual recordings and transcripts. A passing model is evidence of consistency, not proof of investment upside.

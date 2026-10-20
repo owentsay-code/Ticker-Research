@@ -1,0 +1,23 @@
+Video 3 transcript
+
+Transcript text matches the recording, as confirmed by the student.
+
+My recommendation is WATCH/DEFER for NVIDIA using September 8 historical data. This tool lets the team test assumptions while keeping accounting and checks fixed.
+
+Adding two percentage points to annual growth raises value from 209.28 to 224.81 dollars. Higher sales raise profit, while taxes and reinvestment absorb part of the cash-flow increase.
+
+Reset recovers the base. A favorable scenario is not new evidence, so my recommendation stays unchanged.
+
+This diagnostic forces operating margin above gross margin, requiring negative research expense. The check rejects the scenario and withholds valuation.
+
+Reset restores the base. Passing checks confirms consistency, not that the assumptions will happen.
+
+The fund has no position. My conditional range is roughly 125 to 386 dollars per share, with a 209-dollar base, against the historical 225.73-dollar price. The low case combines weaker growth and margins with a higher required return and lower terminal growth. The high case combines stronger operations with lower perceived risk. This is a scenario range, not a probability interval or a downside floor. It does not capture a full AI-spending collapse.
+
+Growth has the largest operating effect over the selected ranges, but the ranking changes when those ranges change. About 78 percent of base enterprise value is in the terminal period. The 58-percent terminal operating margin and 10-percent WACC are judgments, not independently established market facts. The narrower 164-to-294-dollar grid changes only WACC and terminal growth, so it is different from the combined causal-case range.
+
+Matching the historical price requires about 26.26 percent constant annual revenue growth for five years, with other assumptions fixed. That is one possible expectation, not proof of what all investors believe. Peer P/E results are much higher, but business mix, annual earnings, accounting and timing limit comparability. I do not mechanically average those results with DCF.
+
+Kristyn's AI-bubble challenge matters because useful technology can coexist with poor investment returns and weaker customer spending. I monitor demand, financing, margins, working capital and capital spending. Two quarters implying growth below the lower path or margin more than five points below base trigger a rebuild. A material financing or export event triggers immediate review.
+
+My committee ask is to keep NVIDIA on watch and not initiate under this historical analysis. I would consider initiation when a newly reviewed conservative value supports a 20-percent margin of safety. Against the current lower case, that is roughly 100 dollars per share, a review threshold rather than an automatic buy order. If demand, financing or pricing invalidates the conservative case, I would recommend do not initiate and rebuild the assumptions.
