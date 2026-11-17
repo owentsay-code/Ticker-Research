@@ -1,0 +1,958 @@
+{
+  "Base": {
+    "inputs": {
+      "window": 59,
+      "cost_bps": 25.0,
+      "equity_shift_pp": 0.0,
+      "fund_cap": 0.4,
+      "reserve": 0.03,
+      "cpi": 0.025,
+      "lag_months": 0,
+      "reserve_proxy": true
+    },
+    "as_of": "2026-10-22",
+    "price_month_end": "2026-09-01",
+    "information_through": "2026-09-30",
+    "returns_count": 59,
+    "estimated_returns": {
+      "SGOV": 0.03778438603881329,
+      "VGIT": -0.0015245026421490723,
+      "VCIT": 0.007282406807752466,
+      "ACWI": 0.1124995054939682
+    },
+    "covariance": [
+      [
+        2.3275328719526815e-05,
+        6.539585000466888e-05,
+        0.00010584501276716967,
+        0.00017102452792415516
+      ],
+      [
+        6.539585000466888e-05,
+        0.0029712081362260187,
+        0.004015414456359592,
+        0.004866305362642844
+      ],
+      [
+        0.00010584501276716967,
+        0.004015414456359592,
+        0.006145777402462706,
+        0.009077274267573737
+      ],
+      [
+        0.00017102452792415516,
+        0.004866305362642844,
+        0.009077274267573737,
+        0.022136185140500645
+      ]
+    ],
+    "signal": {
+      "name": "12-month ACWI momentum",
+      "value": 0.16612782368627332,
+      "equity_cap": 0.4,
+      "available_on": "2026-10-22"
+    },
+    "candidate": {
+      "weights": {
+        "SGOV": 0.4,
+        "VGIT": 0.2,
+        "VCIT": 0.0,
+        "ACWI": 0.4
+      },
+      "net_return": 0.05730865608468278,
+      "volatility": 0.06714284804417818,
+      "proxy_reserve": 0.4,
+      "strict_reserve": 0.0,
+      "liquid_share": 1.0,
+      "target": 0.055,
+      "checks": {
+        "Fully invested": true,
+        "Long-only": true,
+        "Diversified fund cap": true,
+        "Reserve under selected interpretation": true,
+        "Normal-market five-day liquidity (assumed)": true,
+        "Research net return floor": true,
+        "Research signal equity cap": true
+      },
+      "modeled_pass": true,
+      "mandate_verdict": "FAIL",
+      "mandate_failures": [
+        "Reserve: 0% in cash/direct bills versus required reserve",
+        "Benchmark and risk policy not approved",
+        "Turnover, actual liquidity and payout controls unverified"
+      ]
+    },
+    "baselines": {
+      "Equal weight": {
+        "weights": {
+          "SGOV": 0.25,
+          "VGIT": 0.25,
+          "VCIT": 0.25,
+          "ACWI": 0.25
+        },
+        "net_return": 0.03651044892459622,
+        "volatility": 0.06513397968920161,
+        "proxy_reserve": 0.25,
+        "strict_reserve": 0.0,
+        "liquid_share": 1.0,
+        "target": 0.055,
+        "checks": {
+          "Fully invested": true,
+          "Long-only": true,
+          "Diversified fund cap": true,
+          "Reserve under selected interpretation": true,
+          "Normal-market five-day liquidity (assumed)": true,
+          "Research net return floor": false,
+          "Research signal equity cap": true
+        },
+        "modeled_pass": false,
+        "mandate_verdict": "FAIL",
+        "mandate_failures": [
+          "Reserve: 0% in cash/direct bills versus required reserve",
+          "Benchmark and risk policy not approved",
+          "Turnover, actual liquidity and payout controls unverified"
+        ]
+      },
+      "60/40 reference (proposed benchmark)": {
+        "weights": {
+          "SGOV": 0.0,
+          "VGIT": 0.0,
+          "VCIT": 0.4,
+          "ACWI": 0.6
+        },
+        "net_return": 0.0679126660194819,
+        "volatility": 0.11536655790743545,
+        "proxy_reserve": 0.0,
+        "strict_reserve": 0.0,
+        "liquid_share": 1.0,
+        "target": 0.055,
+        "checks": {
+          "Fully invested": true,
+          "Long-only": true,
+          "Diversified fund cap": false,
+          "Reserve under selected interpretation": false,
+          "Normal-market five-day liquidity (assumed)": true,
+          "Research net return floor": true,
+          "Research signal equity cap": false
+        },
+        "modeled_pass": false,
+        "mandate_verdict": "FAIL",
+        "mandate_failures": [
+          "Reserve: 0% in cash/direct bills versus required reserve",
+          "Benchmark and risk policy not approved",
+          "Turnover, actual liquidity and payout controls unverified"
+        ]
+      }
+    },
+    "feasible_count": 14,
+    "decision": "Reject live allocation to this process (0%\u20130% of fund assets); reconsider only after reserve eligibility, benchmark and risk policy are approved, operational controls are evidenced, and the approved model passes its stress checks.",
+    "data_sha256": "26e2b2552b4ff99d55815895e5d18aeef07115cc74b3373f3745fd6815d09066"
+  },
+  "Equity estimate -2 pp": {
+    "inputs": {
+      "window": 59,
+      "cost_bps": 25.0,
+      "equity_shift_pp": -2,
+      "fund_cap": 0.4,
+      "reserve": 0.03,
+      "cpi": 0.025,
+      "lag_months": 0,
+      "reserve_proxy": true
+    },
+    "as_of": "2026-10-22",
+    "price_month_end": "2026-09-01",
+    "information_through": "2026-09-30",
+    "returns_count": 59,
+    "estimated_returns": {
+      "SGOV": 0.03778438603881329,
+      "VGIT": -0.0015245026421490723,
+      "VCIT": 0.007282406807752466,
+      "ACWI": 0.0924995054939682
+    },
+    "covariance": [
+      [
+        2.3275328719526815e-05,
+        6.539585000466888e-05,
+        0.00010584501276716967,
+        0.00017102452792415516
+      ],
+      [
+        6.539585000466888e-05,
+        0.0029712081362260187,
+        0.004015414456359592,
+        0.004866305362642844
+      ],
+      [
+        0.00010584501276716967,
+        0.004015414456359592,
+        0.006145777402462706,
+        0.009077274267573737
+      ],
+      [
+        0.00017102452792415516,
+        0.004866305362642844,
+        0.009077274267573737,
+        0.022136185140500645
+      ]
+    ],
+    "signal": {
+      "name": "12-month ACWI momentum",
+      "value": 0.16612782368627332,
+      "equity_cap": 0.4,
+      "available_on": "2026-10-22"
+    },
+    "candidate": null,
+    "baselines": {
+      "Equal weight": {
+        "weights": {
+          "SGOV": 0.25,
+          "VGIT": 0.25,
+          "VCIT": 0.25,
+          "ACWI": 0.25
+        },
+        "net_return": 0.031510448924596215,
+        "volatility": 0.06513397968920161,
+        "proxy_reserve": 0.25,
+        "strict_reserve": 0.0,
+        "liquid_share": 1.0,
+        "target": 0.055,
+        "checks": {
+          "Fully invested": true,
+          "Long-only": true,
+          "Diversified fund cap": true,
+          "Reserve under selected interpretation": true,
+          "Normal-market five-day liquidity (assumed)": true,
+          "Research net return floor": false,
+          "Research signal equity cap": true
+        },
+        "modeled_pass": false,
+        "mandate_verdict": "FAIL",
+        "mandate_failures": [
+          "Reserve: 0% in cash/direct bills versus required reserve",
+          "Benchmark and risk policy not approved",
+          "Turnover, actual liquidity and payout controls unverified"
+        ]
+      },
+      "60/40 reference (proposed benchmark)": {
+        "weights": {
+          "SGOV": 0.0,
+          "VGIT": 0.0,
+          "VCIT": 0.4,
+          "ACWI": 0.6
+        },
+        "net_return": 0.0559126660194819,
+        "volatility": 0.11536655790743545,
+        "proxy_reserve": 0.0,
+        "strict_reserve": 0.0,
+        "liquid_share": 1.0,
+        "target": 0.055,
+        "checks": {
+          "Fully invested": true,
+          "Long-only": true,
+          "Diversified fund cap": false,
+          "Reserve under selected interpretation": false,
+          "Normal-market five-day liquidity (assumed)": true,
+          "Research net return floor": true,
+          "Research signal equity cap": false
+        },
+        "modeled_pass": false,
+        "mandate_verdict": "FAIL",
+        "mandate_failures": [
+          "Reserve: 0% in cash/direct bills versus required reserve",
+          "Benchmark and risk policy not approved",
+          "Turnover, actual liquidity and payout controls unverified"
+        ]
+      }
+    },
+    "feasible_count": 0,
+    "decision": "Reject live allocation to this process (0%\u20130% of fund assets); reconsider only after reserve eligibility, benchmark and risk policy are approved, operational controls are evidenced, and the approved model passes its stress checks.",
+    "data_sha256": "26e2b2552b4ff99d55815895e5d18aeef07115cc74b3373f3745fd6815d09066"
+  },
+  "36-return window": {
+    "inputs": {
+      "window": 36,
+      "cost_bps": 25.0,
+      "equity_shift_pp": 0.0,
+      "fund_cap": 0.4,
+      "reserve": 0.03,
+      "cpi": 0.025,
+      "lag_months": 0,
+      "reserve_proxy": true
+    },
+    "as_of": "2026-10-22",
+    "price_month_end": "2026-09-01",
+    "information_through": "2026-09-30",
+    "returns_count": 36,
+    "estimated_returns": {
+      "SGOV": 0.04439955716545555,
+      "VGIT": 0.03519951227529727,
+      "VCIT": 0.05768892362432772,
+      "ACWI": 0.20504010412635099
+    },
+    "covariance": [
+      [
+        4.528279543365604e-06,
+        2.051376144434698e-05,
+        3.343694717416299e-05,
+        3.124992337700184e-05
+      ],
+      [
+        2.051376144434698e-05,
+        0.002160986728265941,
+        0.0026969188271914104,
+        0.002598544036060844
+      ],
+      [
+        3.343694717416299e-05,
+        0.0026969188271914104,
+        0.003851214330699469,
+        0.004717099276255546
+      ],
+      [
+        3.124992337700184e-05,
+        0.002598544036060844,
+        0.004717099276255546,
+        0.013300348989505304
+      ]
+    ],
+    "signal": {
+      "name": "12-month ACWI momentum",
+      "value": 0.16612782368627332,
+      "equity_cap": 0.4,
+      "available_on": "2026-10-22"
+    },
+    "candidate": {
+      "weights": {
+        "SGOV": 0.4,
+        "VGIT": 0.4,
+        "VCIT": 0.1,
+        "ACWI": 0.1
+      },
+      "net_return": 0.055612530551369,
+      "volatility": 0.032368447635670025,
+      "proxy_reserve": 0.4,
+      "strict_reserve": 0.0,
+      "liquid_share": 1.0,
+      "target": 0.055,
+      "checks": {
+        "Fully invested": true,
+        "Long-only": true,
+        "Diversified fund cap": true,
+        "Reserve under selected interpretation": true,
+        "Normal-market five-day liquidity (assumed)": true,
+        "Research net return floor": true,
+        "Research signal equity cap": true
+      },
+      "modeled_pass": true,
+      "mandate_verdict": "FAIL",
+      "mandate_failures": [
+        "Reserve: 0% in cash/direct bills versus required reserve",
+        "Benchmark and risk policy not approved",
+        "Turnover, actual liquidity and payout controls unverified"
+      ]
+    },
+    "baselines": {
+      "Equal weight": {
+        "weights": {
+          "SGOV": 0.25,
+          "VGIT": 0.25,
+          "VCIT": 0.25,
+          "ACWI": 0.25
+        },
+        "net_return": 0.08308202429785788,
+        "volatility": 0.04969444377331126,
+        "proxy_reserve": 0.25,
+        "strict_reserve": 0.0,
+        "liquid_share": 1.0,
+        "target": 0.055,
+        "checks": {
+          "Fully invested": true,
+          "Long-only": true,
+          "Diversified fund cap": true,
+          "Reserve under selected interpretation": true,
+          "Normal-market five-day liquidity (assumed)": true,
+          "Research net return floor": true,
+          "Research signal equity cap": true
+        },
+        "modeled_pass": true,
+        "mandate_verdict": "FAIL",
+        "mandate_failures": [
+          "Reserve: 0% in cash/direct bills versus required reserve",
+          "Benchmark and risk policy not approved",
+          "Turnover, actual liquidity and payout controls unverified"
+        ]
+      },
+      "60/40 reference (proposed benchmark)": {
+        "weights": {
+          "SGOV": 0.0,
+          "VGIT": 0.0,
+          "VCIT": 0.4,
+          "ACWI": 0.6
+        },
+        "net_return": 0.14359963192554168,
+        "volatility": 0.08757012950622196,
+        "proxy_reserve": 0.0,
+        "strict_reserve": 0.0,
+        "liquid_share": 1.0,
+        "target": 0.055,
+        "checks": {
+          "Fully invested": true,
+          "Long-only": true,
+          "Diversified fund cap": false,
+          "Reserve under selected interpretation": false,
+          "Normal-market five-day liquidity (assumed)": true,
+          "Research net return floor": true,
+          "Research signal equity cap": false
+        },
+        "modeled_pass": false,
+        "mandate_verdict": "FAIL",
+        "mandate_failures": [
+          "Reserve: 0% in cash/direct bills versus required reserve",
+          "Benchmark and risk policy not approved",
+          "Turnover, actual liquidity and payout controls unverified"
+        ]
+      }
+    },
+    "feasible_count": 324,
+    "decision": "Reject live allocation to this process (0%\u20130% of fund assets); reconsider only after reserve eligibility, benchmark and risk policy are approved, operational controls are evidenced, and the approved model passes its stress checks.",
+    "data_sha256": "26e2b2552b4ff99d55815895e5d18aeef07115cc74b3373f3745fd6815d09066"
+  },
+  "Cost 50 bps/year": {
+    "inputs": {
+      "window": 59,
+      "cost_bps": 50,
+      "equity_shift_pp": 0.0,
+      "fund_cap": 0.4,
+      "reserve": 0.03,
+      "cpi": 0.025,
+      "lag_months": 0,
+      "reserve_proxy": true
+    },
+    "as_of": "2026-10-22",
+    "price_month_end": "2026-09-01",
+    "information_through": "2026-09-30",
+    "returns_count": 59,
+    "estimated_returns": {
+      "SGOV": 0.03778438603881329,
+      "VGIT": -0.0015245026421490723,
+      "VCIT": 0.007282406807752466,
+      "ACWI": 0.1124995054939682
+    },
+    "covariance": [
+      [
+        2.3275328719526815e-05,
+        6.539585000466888e-05,
+        0.00010584501276716967,
+        0.00017102452792415516
+      ],
+      [
+        6.539585000466888e-05,
+        0.0029712081362260187,
+        0.004015414456359592,
+        0.004866305362642844
+      ],
+      [
+        0.00010584501276716967,
+        0.004015414456359592,
+        0.006145777402462706,
+        0.009077274267573737
+      ],
+      [
+        0.00017102452792415516,
+        0.004866305362642844,
+        0.009077274267573737,
+        0.022136185140500645
+      ]
+    ],
+    "signal": {
+      "name": "12-month ACWI momentum",
+      "value": 0.16612782368627332,
+      "equity_cap": 0.4,
+      "available_on": "2026-10-22"
+    },
+    "candidate": {
+      "weights": {
+        "SGOV": 0.4,
+        "VGIT": 0.15,
+        "VCIT": 0.05,
+        "ACWI": 0.4
+      },
+      "net_return": 0.055249001557177865,
+      "volatility": 0.06856980592184092,
+      "proxy_reserve": 0.4,
+      "strict_reserve": 0.0,
+      "liquid_share": 1.0,
+      "target": 0.055,
+      "checks": {
+        "Fully invested": true,
+        "Long-only": true,
+        "Diversified fund cap": true,
+        "Reserve under selected interpretation": true,
+        "Normal-market five-day liquidity (assumed)": true,
+        "Research net return floor": true,
+        "Research signal equity cap": true
+      },
+      "modeled_pass": true,
+      "mandate_verdict": "FAIL",
+      "mandate_failures": [
+        "Reserve: 0% in cash/direct bills versus required reserve",
+        "Benchmark and risk policy not approved",
+        "Turnover, actual liquidity and payout controls unverified"
+      ]
+    },
+    "baselines": {
+      "Equal weight": {
+        "weights": {
+          "SGOV": 0.25,
+          "VGIT": 0.25,
+          "VCIT": 0.25,
+          "ACWI": 0.25
+        },
+        "net_return": 0.034010448924596225,
+        "volatility": 0.06513397968920161,
+        "proxy_reserve": 0.25,
+        "strict_reserve": 0.0,
+        "liquid_share": 1.0,
+        "target": 0.055,
+        "checks": {
+          "Fully invested": true,
+          "Long-only": true,
+          "Diversified fund cap": true,
+          "Reserve under selected interpretation": true,
+          "Normal-market five-day liquidity (assumed)": true,
+          "Research net return floor": false,
+          "Research signal equity cap": true
+        },
+        "modeled_pass": false,
+        "mandate_verdict": "FAIL",
+        "mandate_failures": [
+          "Reserve: 0% in cash/direct bills versus required reserve",
+          "Benchmark and risk policy not approved",
+          "Turnover, actual liquidity and payout controls unverified"
+        ]
+      },
+      "60/40 reference (proposed benchmark)": {
+        "weights": {
+          "SGOV": 0.0,
+          "VGIT": 0.0,
+          "VCIT": 0.4,
+          "ACWI": 0.6
+        },
+        "net_return": 0.0654126660194819,
+        "volatility": 0.11536655790743545,
+        "proxy_reserve": 0.0,
+        "strict_reserve": 0.0,
+        "liquid_share": 1.0,
+        "target": 0.055,
+        "checks": {
+          "Fully invested": true,
+          "Long-only": true,
+          "Diversified fund cap": false,
+          "Reserve under selected interpretation": false,
+          "Normal-market five-day liquidity (assumed)": true,
+          "Research net return floor": true,
+          "Research signal equity cap": false
+        },
+        "modeled_pass": false,
+        "mandate_verdict": "FAIL",
+        "mandate_failures": [
+          "Reserve: 0% in cash/direct bills versus required reserve",
+          "Benchmark and risk policy not approved",
+          "Turnover, actual liquidity and payout controls unverified"
+        ]
+      }
+    },
+    "feasible_count": 5,
+    "decision": "Reject live allocation to this process (0%\u20130% of fund assets); reconsider only after reserve eligibility, benchmark and risk policy are approved, operational controls are evidenced, and the approved model passes its stress checks.",
+    "data_sha256": "26e2b2552b4ff99d55815895e5d18aeef07115cc74b3373f3745fd6815d09066"
+  },
+  "Fund cap 30%": {
+    "inputs": {
+      "window": 59,
+      "cost_bps": 25.0,
+      "equity_shift_pp": 0.0,
+      "fund_cap": 0.3,
+      "reserve": 0.03,
+      "cpi": 0.025,
+      "lag_months": 0,
+      "reserve_proxy": true
+    },
+    "as_of": "2026-10-22",
+    "price_month_end": "2026-09-01",
+    "information_through": "2026-09-30",
+    "returns_count": 59,
+    "estimated_returns": {
+      "SGOV": 0.03778438603881329,
+      "VGIT": -0.0015245026421490723,
+      "VCIT": 0.007282406807752466,
+      "ACWI": 0.1124995054939682
+    },
+    "covariance": [
+      [
+        2.3275328719526815e-05,
+        6.539585000466888e-05,
+        0.00010584501276716967,
+        0.00017102452792415516
+      ],
+      [
+        6.539585000466888e-05,
+        0.0029712081362260187,
+        0.004015414456359592,
+        0.004866305362642844
+      ],
+      [
+        0.00010584501276716967,
+        0.004015414456359592,
+        0.006145777402462706,
+        0.009077274267573737
+      ],
+      [
+        0.00017102452792415516,
+        0.004866305362642844,
+        0.009077274267573737,
+        0.022136185140500645
+      ]
+    ],
+    "signal": {
+      "name": "12-month ACWI momentum",
+      "value": 0.16612782368627332,
+      "equity_cap": 0.3,
+      "available_on": "2026-10-22"
+    },
+    "candidate": null,
+    "baselines": {
+      "Equal weight": {
+        "weights": {
+          "SGOV": 0.25,
+          "VGIT": 0.25,
+          "VCIT": 0.25,
+          "ACWI": 0.25
+        },
+        "net_return": 0.03651044892459622,
+        "volatility": 0.06513397968920161,
+        "proxy_reserve": 0.25,
+        "strict_reserve": 0.0,
+        "liquid_share": 1.0,
+        "target": 0.055,
+        "checks": {
+          "Fully invested": true,
+          "Long-only": true,
+          "Diversified fund cap": true,
+          "Reserve under selected interpretation": true,
+          "Normal-market five-day liquidity (assumed)": true,
+          "Research net return floor": false,
+          "Research signal equity cap": true
+        },
+        "modeled_pass": false,
+        "mandate_verdict": "FAIL",
+        "mandate_failures": [
+          "Reserve: 0% in cash/direct bills versus required reserve",
+          "Benchmark and risk policy not approved",
+          "Turnover, actual liquidity and payout controls unverified"
+        ]
+      },
+      "60/40 reference (proposed benchmark)": {
+        "weights": {
+          "SGOV": 0.0,
+          "VGIT": 0.0,
+          "VCIT": 0.4,
+          "ACWI": 0.6
+        },
+        "net_return": 0.0679126660194819,
+        "volatility": 0.11536655790743545,
+        "proxy_reserve": 0.0,
+        "strict_reserve": 0.0,
+        "liquid_share": 1.0,
+        "target": 0.055,
+        "checks": {
+          "Fully invested": true,
+          "Long-only": true,
+          "Diversified fund cap": false,
+          "Reserve under selected interpretation": false,
+          "Normal-market five-day liquidity (assumed)": true,
+          "Research net return floor": true,
+          "Research signal equity cap": false
+        },
+        "modeled_pass": false,
+        "mandate_verdict": "FAIL",
+        "mandate_failures": [
+          "Reserve: 0% in cash/direct bills versus required reserve",
+          "Benchmark and risk policy not approved",
+          "Turnover, actual liquidity and payout controls unverified"
+        ]
+      }
+    },
+    "feasible_count": 0,
+    "decision": "Reject live allocation to this process (0%\u20130% of fund assets); reconsider only after reserve eligibility, benchmark and risk policy are approved, operational controls are evidenced, and the approved model passes its stress checks.",
+    "data_sha256": "26e2b2552b4ff99d55815895e5d18aeef07115cc74b3373f3745fd6815d09066"
+  },
+  "Strict reserve eligibility": {
+    "inputs": {
+      "window": 59,
+      "cost_bps": 25.0,
+      "equity_shift_pp": 0.0,
+      "fund_cap": 0.4,
+      "reserve": 0.03,
+      "cpi": 0.025,
+      "lag_months": 0,
+      "reserve_proxy": false
+    },
+    "as_of": "2026-10-22",
+    "price_month_end": "2026-09-01",
+    "information_through": "2026-09-30",
+    "returns_count": 59,
+    "estimated_returns": {
+      "SGOV": 0.03778438603881329,
+      "VGIT": -0.0015245026421490723,
+      "VCIT": 0.007282406807752466,
+      "ACWI": 0.1124995054939682
+    },
+    "covariance": [
+      [
+        2.3275328719526815e-05,
+        6.539585000466888e-05,
+        0.00010584501276716967,
+        0.00017102452792415516
+      ],
+      [
+        6.539585000466888e-05,
+        0.0029712081362260187,
+        0.004015414456359592,
+        0.004866305362642844
+      ],
+      [
+        0.00010584501276716967,
+        0.004015414456359592,
+        0.006145777402462706,
+        0.009077274267573737
+      ],
+      [
+        0.00017102452792415516,
+        0.004866305362642844,
+        0.009077274267573737,
+        0.022136185140500645
+      ]
+    ],
+    "signal": {
+      "name": "12-month ACWI momentum",
+      "value": 0.16612782368627332,
+      "equity_cap": 0.4,
+      "available_on": "2026-10-22"
+    },
+    "candidate": null,
+    "baselines": {
+      "Equal weight": {
+        "weights": {
+          "SGOV": 0.25,
+          "VGIT": 0.25,
+          "VCIT": 0.25,
+          "ACWI": 0.25
+        },
+        "net_return": 0.03651044892459622,
+        "volatility": 0.06513397968920161,
+        "proxy_reserve": 0.25,
+        "strict_reserve": 0.0,
+        "liquid_share": 1.0,
+        "target": 0.055,
+        "checks": {
+          "Fully invested": true,
+          "Long-only": true,
+          "Diversified fund cap": true,
+          "Reserve under selected interpretation": false,
+          "Normal-market five-day liquidity (assumed)": true,
+          "Research net return floor": false,
+          "Research signal equity cap": true
+        },
+        "modeled_pass": false,
+        "mandate_verdict": "FAIL",
+        "mandate_failures": [
+          "Reserve: 0% in cash/direct bills versus required reserve",
+          "Benchmark and risk policy not approved",
+          "Turnover, actual liquidity and payout controls unverified"
+        ]
+      },
+      "60/40 reference (proposed benchmark)": {
+        "weights": {
+          "SGOV": 0.0,
+          "VGIT": 0.0,
+          "VCIT": 0.4,
+          "ACWI": 0.6
+        },
+        "net_return": 0.0679126660194819,
+        "volatility": 0.11536655790743545,
+        "proxy_reserve": 0.0,
+        "strict_reserve": 0.0,
+        "liquid_share": 1.0,
+        "target": 0.055,
+        "checks": {
+          "Fully invested": true,
+          "Long-only": true,
+          "Diversified fund cap": false,
+          "Reserve under selected interpretation": false,
+          "Normal-market five-day liquidity (assumed)": true,
+          "Research net return floor": true,
+          "Research signal equity cap": false
+        },
+        "modeled_pass": false,
+        "mandate_verdict": "FAIL",
+        "mandate_failures": [
+          "Reserve: 0% in cash/direct bills versus required reserve",
+          "Benchmark and risk policy not approved",
+          "Turnover, actual liquidity and payout controls unverified"
+        ]
+      }
+    },
+    "feasible_count": 0,
+    "decision": "Reject live allocation to this process (0%\u20130% of fund assets); reconsider only after reserve eligibility, benchmark and risk policy are approved, operational controls are evidenced, and the approved model passes its stress checks.",
+    "data_sha256": "26e2b2552b4ff99d55815895e5d18aeef07115cc74b3373f3745fd6815d09066"
+  },
+  "Combined changes (36-month window may help)": {
+    "inputs": {
+      "window": 36,
+      "cost_bps": 50,
+      "equity_shift_pp": -2,
+      "fund_cap": 0.3,
+      "reserve": 0.03,
+      "cpi": 0.025,
+      "lag_months": 0,
+      "reserve_proxy": true
+    },
+    "as_of": "2026-10-22",
+    "price_month_end": "2026-09-01",
+    "information_through": "2026-09-30",
+    "returns_count": 36,
+    "estimated_returns": {
+      "SGOV": 0.04439955716545555,
+      "VGIT": 0.03519951227529727,
+      "VCIT": 0.05768892362432772,
+      "ACWI": 0.185040104126351
+    },
+    "covariance": [
+      [
+        4.528279543365604e-06,
+        2.051376144434698e-05,
+        3.343694717416299e-05,
+        3.124992337700184e-05
+      ],
+      [
+        2.051376144434698e-05,
+        0.002160986728265941,
+        0.0026969188271914104,
+        0.002598544036060844
+      ],
+      [
+        3.343694717416299e-05,
+        0.0026969188271914104,
+        0.003851214330699469,
+        0.004717099276255546
+      ],
+      [
+        3.124992337700184e-05,
+        0.002598544036060844,
+        0.004717099276255546,
+        0.013300348989505304
+      ]
+    ],
+    "signal": {
+      "name": "12-month ACWI momentum",
+      "value": 0.16612782368627332,
+      "equity_cap": 0.3,
+      "available_on": "2026-10-22"
+    },
+    "candidate": {
+      "weights": {
+        "SGOV": 0.3,
+        "VGIT": 0.3,
+        "VCIT": 0.25,
+        "ACWI": 0.15
+      },
+      "net_return": 0.06105796735726043,
+      "volatility": 0.04169610106375432,
+      "proxy_reserve": 0.3,
+      "strict_reserve": 0.0,
+      "liquid_share": 1.0,
+      "target": 0.055,
+      "checks": {
+        "Fully invested": true,
+        "Long-only": true,
+        "Diversified fund cap": true,
+        "Reserve under selected interpretation": true,
+        "Normal-market five-day liquidity (assumed)": true,
+        "Research net return floor": true,
+        "Research signal equity cap": true
+      },
+      "modeled_pass": true,
+      "mandate_verdict": "FAIL",
+      "mandate_failures": [
+        "Reserve: 0% in cash/direct bills versus required reserve",
+        "Benchmark and risk policy not approved",
+        "Turnover, actual liquidity and payout controls unverified"
+      ]
+    },
+    "baselines": {
+      "Equal weight": {
+        "weights": {
+          "SGOV": 0.25,
+          "VGIT": 0.25,
+          "VCIT": 0.25,
+          "ACWI": 0.25
+        },
+        "net_return": 0.07558202429785787,
+        "volatility": 0.04969444377331126,
+        "proxy_reserve": 0.25,
+        "strict_reserve": 0.0,
+        "liquid_share": 1.0,
+        "target": 0.055,
+        "checks": {
+          "Fully invested": true,
+          "Long-only": true,
+          "Diversified fund cap": true,
+          "Reserve under selected interpretation": true,
+          "Normal-market five-day liquidity (assumed)": true,
+          "Research net return floor": true,
+          "Research signal equity cap": true
+        },
+        "modeled_pass": true,
+        "mandate_verdict": "FAIL",
+        "mandate_failures": [
+          "Reserve: 0% in cash/direct bills versus required reserve",
+          "Benchmark and risk policy not approved",
+          "Turnover, actual liquidity and payout controls unverified"
+        ]
+      },
+      "60/40 reference (proposed benchmark)": {
+        "weights": {
+          "SGOV": 0.0,
+          "VGIT": 0.0,
+          "VCIT": 0.4,
+          "ACWI": 0.6
+        },
+        "net_return": 0.1290996319255417,
+        "volatility": 0.08757012950622196,
+        "proxy_reserve": 0.0,
+        "strict_reserve": 0.0,
+        "liquid_share": 1.0,
+        "target": 0.055,
+        "checks": {
+          "Fully invested": true,
+          "Long-only": true,
+          "Diversified fund cap": false,
+          "Reserve under selected interpretation": false,
+          "Normal-market five-day liquidity (assumed)": true,
+          "Research net return floor": true,
+          "Research signal equity cap": false
+        },
+        "modeled_pass": false,
+        "mandate_verdict": "FAIL",
+        "mandate_failures": [
+          "Reserve: 0% in cash/direct bills versus required reserve",
+          "Benchmark and risk policy not approved",
+          "Turnover, actual liquidity and payout controls unverified"
+        ]
+      }
+    },
+    "feasible_count": 34,
+    "decision": "Reject live allocation to this process (0%\u20130% of fund assets); reconsider only after reserve eligibility, benchmark and risk policy are approved, operational controls are evidenced, and the approved model passes its stress checks.",
+    "data_sha256": "26e2b2552b4ff99d55815895e5d18aeef07115cc74b3373f3745fd6815d09066"
+  }
+}
