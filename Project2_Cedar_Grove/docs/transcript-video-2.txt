@@ -1,0 +1,57 @@
+Project 2 – Video 2: Code Walkthrough (Cedar Grove Scholarship Reserve)
+Speaker: Owen Tsay
+YouTube: https://www.youtube.com/watch?v=lBuVQiO0ybo
+Duration: 5:45
+
+Source: YouTube auto-generated captions of the recorded video, lightly cleaned
+(filler words removed; misheard names, function names and terms corrected). Wording otherwise as spoken.
+
+[0:02] Hi there. This is Video 2 for Project 2. First off, this is my Cedar Grove Project 2 README.
+
+[0:11] So here's the one-command start. From the full project folder, bash run.sh creates a virtual environment, installs the pinned packages, generates the ordinary report and starts Streamlit. The app uses frozen local data and needs no API key. The locked experiment is separate from the ordinary startup.
+
+[0:34] So now we're going to app.py. app.py is the interface. Let me show you the inputs.
+
+[0:45] app.py is the interface. The sidebar supplies costs, return estimate changes, the estimation window, fund cap, information lag and reserve interpretation. These become one Inputs object. The engine results supply the table, rules check and downloadable scenario.
+
+[1:03] Now we're going to go to engine.py and look for the def. It's right there.
+
+[1:14] So here are the checks. load_prices reads the four fund CSVs and rejects invalid prices, duplicate or non-consecutive months, and incomplete future months. 60 prices produce 59 monthly returns. The information set is from October 22nd, 2026, using prices through September.
+
+[1:36] Now we're going to go to def estimates. There we go.
+
+[1:45] So here's the percent change calculation.
+
+[1:48] Monthly return is current price divided by prior price, minus one. Annual estimates use 12 times the monthly mean and sample covariance. Net return subtracts annual cost divided by 10,000.
+
+[2:01] Volatility is the square root of the weighted covariance calculation. These are historical arithmetic estimates, not guaranteed growth rates.
+
+[2:12] And now we are going to go to momentum.
+
+[2:22] Let's see here. Perfect. There we go.
+
+[2:30] So this signal is ACWI's trailing 12-month adjusted price return. Negative momentum reduces the research equity cap to 20%. Otherwise, it is 40%. Extra lag removes the latest observation. The data card explains why this frozen snapshot is not a historical vintage backtest.
+
+[2:52] And then we're going to go to def grid. There we go.
+
+[3:07] So this is def grid. And then we're going to go to def run.
+
+[3:13] Here we go. So the solver enumerates 1,771 fully invested, long-only allocations in five-percentage-point steps. It filters on the reserve, return floor and exposure caps, then chooses the lowest-variance feasible grid point. This is not a continuous optimum. If nothing survives, the candidate stays empty and the app shows a stop warning.
+
+[3:42] So now we're going to go to the mandate failures. There we go.
+
+[3:51] The full mandate verdict is separate from the numerical checks. An SGOV research proxy does not supply the literal direct-bill reserve. The code also cannot approve a risk policy or verify missing turnover and payout records.
+
+[4:08] So here's the build report. There we go. There's the run.
+
+[4:18] The report uses the same engine for the memo and visible results. Tests independently check return arithmetic, volatility, the grid minimum, cost units, information lag and invalid settings.
+
+[4:35] The app test checks startup and changes the cost and reserve controls. All nine tests passed in the recorded verification.
+
+[4:52] [unclear]
+
+[5:01] Okay. So the locked experiment links a published pre-run prediction. Raising costs from 25 to 125 basis points leaves no feasible constrained portfolio. Infeasible means there is no re-optimized allocation or volatility to report, not that risk becomes zero.
+
+[5:10] So now we're going to switch over to the live app. The code supports a reproducible research review and an honest rejection of live adoption. It does not place trades or prove that scholarship payments will remain funded under every market path. But this is the app that all of that code created.
+
+[5:37] And yeah, thank you very much. That was Video 2.

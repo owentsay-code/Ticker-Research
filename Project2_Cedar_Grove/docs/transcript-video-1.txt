@@ -1,0 +1,47 @@
+Project 2 – Video 1: Overview and Recommendation (Cedar Grove Scholarship Reserve)
+Speaker: Owen Tsay
+YouTube: https://www.youtube.com/watch?v=8mTWA30-o2w
+Duration: 3:52
+
+Source: YouTube auto-generated captions of the recorded video, lightly cleaned
+(filler words removed; misheard names, tickers and terms corrected). Wording otherwise as spoken.
+
+[0:04] Hi there, my name is Owen Tsay and this is my Project 2 video. Just for clarification, I used OpenAI Codex (GPT-6) to help develop code, check calculations and draft this analysis. The analysis and the decision are my own, and this is education, not investment advice.
+
+[0:18] So, first of all, this is the Cedar Grove Scholarship Reserve. It's a fictional $2 million scholarship fund. It pays $60,000 per year and seeks CPI plus 3% net over rolling five-year periods.
+
+[0:37] Okay, so these are my two baselines. My earlier work focused on calculating a portfolio. The final app asks whether that portfolio satisfies the actual mandate. It compares equal weight, a transparent 60/40 reference and a constrained research portfolio. The biggest change in my thinking was recognizing that a portfolio can pass its model and still fail its mandate.
+
+[1:07] So this research portfolio holds 40% SGOV, 20% VGIT, zero VCIT and 40% ACWI. Its estimated net return is 5.73% with an annual volatility of 6.71%.
+
+[1:23] Those numbers alone do not authorize investing.
+
+[1:27] So let me show you the rest of the app, and then we're going to go over to the original mandate.
+
+[1:36] Okay, perfect. So, constraints. Here we go. Hard constraints.
+
+[1:43] So here's one AI system output. I checked the portfolio's pass label and compared it with the original mandate. The model conditionally counts SGOV as a reserve proxy, but the mandate requires cash or direct Treasury bills. Fund shares do not satisfy that literal rule.
+
+[1:59] So the full mandate therefore fails.
+
+[2:02] The benchmark and risk policy also need approval.
+
+[2:07] Here is the whole mandate, just to let you see it. And then we're going to go to the validation and AI use document for Project 2.
+
+[2:15] Here we go.
+
+[2:24] Okay, so here's the verification section, with my locked change.
+
+[2:32] The earlier checkout also exposed missing launch instructions and mismatched GitHub files. The project now has its own dependencies and data. Final verification corrected a test path error, and all nine of my tests have passed.
+
+[2:49] We're going to go to the locked change input. Here we go.
+
+[2:56] So the prediction was published on November 17th, before the recorded run.
+
+[3:01] Increasing annual cost from 25 to 125 basis points lowered the fixed-weight net returns by exactly 1 percentage point. Feasible portfolios fell from 14 to zero.
+
+[3:09] And now we're going to go to the live app again, but I'm just letting you see this. Okay, so, the live app.
+
+[3:28] So this is the reject notice. My recommendation is to reject live allocation, with a 0% to 0% range. I would reconsider after reserve implementation, risk and benchmark approval, operational controls and approved stress checks are complete.
+
+[3:42] Thank you very much. This was Video 1.
